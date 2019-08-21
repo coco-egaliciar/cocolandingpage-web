@@ -1,14 +1,3 @@
-/* --------------------------------------------------
-:: Template Name: Apland - App Landing Page Template
-:: Template URI: https://wrapbootstrap.com/theme/apland-app-landing-page-WB0F61H5J
-:: Template Author Name: MD NAZRUL ISLAM
-:: Template Author URI: https://wrapbootstrap.com/user/DesigningWorld
-:: Version: 4.0.2
-:: Updated: Jul 27, 2019
--------------------------------------------------- */
-/* ------------------
-:: 1.0 Import All CSS
------------------- */
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700");
 @import url(css/bootstrap.min.css);
 @import url(css/classy-nav.min.css);
@@ -664,6 +653,19 @@ img {
         top: -30px;
         left: -30px;
         z-index: -100; }
+
+.phoneCoco{
+  background-image: url('assets/imgs/1550519221-13292103-360x628-Whitephone.png');  
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 628px;
+}
+
+.phoneCoco img{
+  width: 240px;
+  position: relative;
+  top: 60px;
+}
 
 .hero-slides {
   position: relative;
