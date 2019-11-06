@@ -16,6 +16,7 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
 
@@ -52,10 +53,10 @@
                             <div class="classynav">
                                 <ul id="corenav">
                                     <li class="active"><a href="#home">Home</a></li>
-                                    <li><a href="#features">Servicios</a></li>
+                                    <li><a href="#servicios">Servicios</a></li>
                                     <li><a href="#team">Equipo</a></li>
-                                    
-                                    <!--li><a href="#">Blog</a>
+
+                                <!--li><a href="#">Blog</a>
                                         <ul class="dropdown">
                                             <li><a href="blog-card.html">Blog Card</a></li>
                                             <li><a href="blog-card-sidebar.html">Blog Card Sidebar</a></li>
@@ -64,7 +65,7 @@
                                             <li><a href="https://medium.com/coconutt-chatbots-en-español/en-el-futuro-todos-tendremos-nuestra-propia-inteligencia-artificial-57bea6944407">El futuro de la IA</a></li>
                                         </ul>
                                     </li-->
-                                        <li><a href="#contact">Contactar</a></li>
+                                    <li><a href="#contact">Contactar</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->
@@ -76,56 +77,132 @@
     </header>
     <!-- ***** Header End ***** -->
 
-    <!-- ***** Welcome Area Start ***** -->
-    <div class="hero-slides owl-carousel" id="home">
-        <!-- Single Hero Slide -->
-        <div class="single-hero-slide bg-img bg-overlay">
-            <div class="container h-100">
-                <div class="row h-100 justify-content-between align-items-center">
-                    <div class="col-12 col-md-6">
-                        <!-- Welcome Area Content -->
-                        <div class="welcome_text_area">
-                            <h2 class="text-white" data-animation="fadeInUp" data-delay="300ms">Mejora tus ventas, automatizando procesos.</h2>
-                            <h5 data-animation="fadeInUp" data-delay="400ms"></h5>
-                            <div class="button-group d-flex align-items-center mt-30" data-animation="fadeInUp" data-delay="500ms">
-                                <a href="#" class="btn apland-btn btn-4 mr-3">¡Lo quiero!</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-10 col-md-6">
-                        <!-- Welcome Image -->
-                        <div class="welcome_area_thumb text-center">
-                            <img src="assets/imgs/hero-2.png" alt="">
-                            <!--a href="https://www.youtube.com/watch?v=es0JOur3qFk&feature=youtu.be&t=14" class="video_btn"><i class="icofont-ui-play"></i> <span class="video-sonar"></span></a-->
-                        </div>
+     <!-- ***** Header Start ***** -->
+    <header class="video_on_header" id="home">
+        <div class="video_on_header__container">
+            <video  class="video_on_header__video" src="PexelsVideos2916.mp4" type="video/mp4" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"></video>
+        </div> 
+        <div class="video_on_header__body">
+            <h1 class="video_on_header__text_white video_on_header__text_white--head">Nosotros somos tu equipo digital</h1>
+            <p class="video_on_header__text_white video_on_header__text_white--body">Diseñamos, construimos y mejoramos productos y servicios digitales</p>
+        </div>
+    </header>
+    <!-- ***** Header STOP***** -->
+
+    <section class="row que_hacemos" id="que_hacemos">
+        <p class="col-12 que_hacemos__body">
+            A lo largo de los años nos hemos dado cuenta que el unico experto de cada negocio eres tú.
+        </p>
+        <p class="col-12 que_hacemos__body">
+            Por medio de nuestra metodología de trabajo te orientamos a ordernar tus ideas y aterrizarlas en un diseño de producto. 
+        </p>
+    </section>
+
+
+    <!-- ***** Price and Plans Area Start ***** -->
+    <div class="price_plan_area section_padding_100_70" id="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6">
+                    <!-- Section Heading -->
+                    <div class="section_heading text-center">
+                        <h6>Servicios</h6>
+                        <h3></h3>
+                        <p></p>
+                        <div class="line"></div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Single Hero Slide -->
-        <div class="single-hero-slide bg-img bg-overlay">
-            <div class="container h-100">
-                <div class="row h-100 justify-content-between align-items-center">
-                    <div class="col-12 col-md-6">
-                        <!-- Welcome Area Content -->
-                        <div class="welcome_text_area">
-                            <h2 class="text-white" data-animation="fadeInUp" data-delay="300ms">Atención a Clientes con Inteligencia Artificial</h2>
-                            <h5 data-animation="fadeInUp" data-delay="400ms">Hacemos Chatbots que se adaptan a tu negocio</h5>
-                            <a href="#" class="btn apland-btn btn-4 mt-30" data-animation="fadeInUp" data-delay="500ms">Cotizar</a>
+            <div class="row justify-content-center">
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="assets/imgs/mack-book.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Desarrollo web y móbil</h5>
+                            <p class="card-text"></p>
                         </div>
                     </div>
-                    <div class="col-10 col-md-6">
-                        <!-- Welcome Image -->
-                        <div class="welcome_area_thumb text-center" data-animation="fadeInUp" data-delay="300ms">
-                            <img src="assets/imgs/home-4-b1.svg" alt="">
+                    <div class="card">
+                        <img src="assets/imgs/home-banner-1.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Inteligencia Artificial</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/imgs/home-5-b1.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Data scientist</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ***** Welcome Area End ***** -->
+    <!-- ***** Price and Plans Area End ***** -->
+
+    <!-- ***** Work Process Area Start ***** -->
+    <section class="work_process_area section_padding_100_50">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6">
+                    <!-- Section Heading -->
+                    <div class="section_heading text-center">
+                        <h3>¿Cómo trabajamos?</h3>
+                        <p>A lo largo de los años nos hemos dado cuenta que el unico experto de cada negocio eres tú, por medio de nuestra metodología de trabajo te orientamos a ordernar tus ideas y aterrizarlas en un diseño de producto.</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <!-- Single Work Step -->
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="single_work_step">
+                        <div class="step-icon">
+                            <i class="far fa-lightbulb"></i>
+
+                        </div>
+                        <h5>Definimos tu solución</h5>
+                    </div>
+                </div>
+
+                <!-- Single Work Step -->
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="single_work_step">
+                        <div class="step-icon">
+                            <i class="icofont-infinite"></i>
+                        </div>
+                        <h5>Seleccionamos tecnologías</h5>
+                    </div>
+                </div>
+
+                <!-- Single Work Step -->
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="single_work_step">
+                        <div class="step-icon">
+                            <i class="icofont-tick-mark"></i>
+                        </div>
+                        <h5>Desa<i class="fas fa-lightbulb"></i>rrollo</h5>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="single_work_step">
+                        <div class="step-icon">
+                            <i class="icofont-tick-mark"></i>
+                        </div>
+                        <h5>Entrega</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ***** Work Process Area End ***** -->
 
     <!-- ***** Product Area Start ***** -->
     <section class="about_area section_padding_100" id="features">
@@ -133,9 +210,9 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-8 col-lg-6">
                     <!-- Section Heading -->
-                    <div class="section_heading text-center">
-                        <h6>Beneficios de trabajar con nosotros</h6>
-                        <h3>Generamos resultados relevantes para tu marca.</h3>
+                    <div class=" text-center">
+                        <!-- <h6>Beneficios de trabajar con nosotros</h6> -->
+                        <h3>Software como potenciador de tu marca</h3>
                         <div class="line"></div>
                     </div>
                 </div>
@@ -163,7 +240,7 @@
                                         <i class="icofont-leaf"></i>
                                     </div>
                                     <h6>Nuevos canales de comunicación</h6>
-                                    <p>Implementamos tu chatbot en Facebook Messenger, Slack, Whatsapp, tu página web  y más.</p>
+                                    <p>Implementamos tu chatbot en Facebook Messenger, Slack, Whatsapp, tu página web y más.</p>
                                 </div>
                             </div>
 
@@ -233,7 +310,8 @@
     </section>
     <!-- ***** Product Area End ***** -->
 
-   
+    Paja de marcas Paja de marcas Paja de marcas Paja de marcas Paja de marcas Paja de marcas Paja de marcas Paja de marcas
+
     <!-- ***** Get Started Area Start ***** -->
     <!--section class="get-started-area">
         <div class="container">
@@ -368,66 +446,6 @@
         </div>
     </div -->
     <!-- ***** Features Area End ***** -->
-
-    <!-- ***** Work Process Area Start ***** -->
-    <section class="work_process_area section_padding_100_50">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-8 col-lg-6">
-                    <!-- Section Heading -->
-                    <div class="section_heading text-center">
-                        <h3>Metodologías ágiles</h3>
-                        <p>Las metodologías ágiles nos permiten adaptar la forma de trabajo a las condiciones de cada proyecto, generando flexibilidad e inmediatez en el proceso de desarrollo de cada proyecto. Así, aseguramos la satisfacción de nuestros clientes dado que se involucran y comprometen a lo largo del proyecto.</p>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-between">
-                <!-- Single Work Step -->
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step">
-                        <div class="step-icon">
-                            <i class="far fa-lightbulb"></i>
-
-                        </div>
-                        <h5>Definimos tu solución</h5>
-                        </div>
-                </div>
-
-                <!-- Single Work Step -->
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step">
-                        <div class="step-icon">
-                            <i class="icofont-infinite"></i>
-                        </div>
-                        <h5>Seleccionamos tecnologías</h5>
-                    </div>
-                </div>
-
-                <!-- Single Work Step -->
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step">
-                        <div class="step-icon">
-                            <i class="icofont-tick-mark"></i>
-                        </div>
-                        <h5>Desa<i class="fas fa-lightbulb"></i>rrollo</h5>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step">
-                        <div class="step-icon">
-                            <i class="icofont-tick-mark"></i>
-                        </div>
-                        <h5>Entrega</h5>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- ***** Work Process Area End ***** -->
 
     <section class="organize-your-sales">
         <div class="container">
@@ -598,50 +616,6 @@
         </div>
     </div>
     <!-- ***** Features Area End ***** -->
-    <!-- ***** Price and Plans Area Start ***** -->
-    <div class="price_plan_area section_padding_100_70" id="pricing">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-8 col-lg-6">
-                    <!-- Section Heading -->
-                    <div class="section_heading text-center">
-                        <h6>Servicios</h6>
-                        <h3></h3>
-                        <p></p>
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="card-deck">
-                    <div class="card">
-                      <img src="assets/imgs/mack-book.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Desarrollo web y móbil</h5>
-                        <p class="card-text"></p>
-                       </div>
-                    </div>
-                    <div class="card">
-                      <img src="assets/imgs/home-banner-1.svg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Inteligencia Artificial</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                       </div>
-                    </div>
-                    <div class="card">
-                      <img src="assets/imgs/home-5-b1.svg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Data scientist</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div> 
-            </div>
-        </div>
-    </div> 
-    <!-- ***** Price and Plans Area End ***** -->
 
     <!-- ***** Our Advisor Area Start ***** -->
     <section class="our_advisor_area section_padding_100_70" id="advisor">
@@ -653,96 +627,6 @@
                         <h3>Nuestro equipo</h3>
                         <p>Somos una empresa de jóvenes apasionados por la tecnología, los chatbots, la lectura, los deportes, la ciencia ficción, el café, los tacos.... básicamente somos personas como tú.</p>
                         <div class="line"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Advisor Area -->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single_advisor_profile">
-                        <!-- Team Thumb -->
-                        <div class="advisor_thumb">
-                            <img src="assets/imgs/jorge.jpeg" alt="">
-
-                            <!-- Social Info -->
-                            <div class="social-info">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <!-- Team Details -->
-                        <div class="single_advisor_details_info">
-                            <h6>Jorge Soto</h6>
-                            <p class="designation">Founder &amp; CEO</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Advisor Area -->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single_advisor_profile">
-                        <!-- Team Thumb -->
-                        <div class="advisor_thumb">
-                            <img src="assets/imgs/34035716-0-lina.jpeg" alt="">
-
-                            <!-- Social Info -->
-                            <div class="social-info">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <!-- Team Details -->
-                        <div class="single_advisor_details_info">
-                            <h6>Lina</h6>
-                            <p class="designation">UI Designer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Advisor Area -->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single_advisor_profile">
-                        <!-- Team Thumb -->
-                        <div class="advisor_thumb">
-                            <img src="assets/imgs/34035756-0-esteban.jpg" alt="">
-
-                            <!-- Social Info -->
-                            <div class="social-info">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <!-- Team Details -->
-                        <div class="single_advisor_details_info">
-                            <h6>Esteban Galicia</h6>
-                            <p class="designation">Fullstack Developer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Advisor Area -->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single_advisor_profile">
-                        <!-- Team Thumb -->
-                        <div class="advisor_thumb">
-                            <img src="assets/imgs/hugeek.jpg" alt="">
-
-                            <!-- Social Info -->
-                            <div class="social-info">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <!-- Team Details -->
-                        <div class="single_advisor_details_info">
-                            <h6>Victor Hugo</h6>
-                            <p class="designation">Fullstack developer</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -814,11 +698,11 @@
     </section-->
     <!-- ***** FAQ Area End ***** -->
 
-    
     <!-- ***** Map Area Start ***** -->
     <div class="map_contact_address_area" id="contact">
         <div class="map_area" id="googleMap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.078916458524!2d-99.17109208561824!3d19.408995946465655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4016e15d31%3A0x69cce9a73dcca4f6!2sCampeche+233%2C+Hip%C3%B3dromo%2C+06100+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1566418925143!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>            <iframe src="" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.078916458524!2d-99.17109208561824!3d19.408995946465655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4016e15d31%3A0x69cce9a73dcca4f6!2sCampeche+233%2C+Hip%C3%B3dromo%2C+06100+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1566418925143!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="" allowfullscreen></iframe>
         </div>
     </div>
     <!-- ***** Map Area End ***** -->
