@@ -3267,6 +3267,12 @@ img {
   right: 0;
 }
 
+@media only screen and (max-width: 767px) {
+	.video_on_header__body  {
+		top: 25%;
+	}
+}  
+
 .video_on_header__text_white {
   position: relative;
   color: #fff;
