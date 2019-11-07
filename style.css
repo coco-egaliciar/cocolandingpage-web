@@ -3196,8 +3196,7 @@ img {
 
 .video_on_header__body {
 	position: absolute;
-	top: 50%;
-	/* left:50%; */
+	top: 40%;
 	text-align: center;
 	left: 0;
 	right: 0;
@@ -3214,11 +3213,13 @@ img {
 
 .video_on_header__text_white--body {
 	font-size: 1.5rem;
+	padding: 10px;
 }
 
 .que_hacemos {
 	padding: 60px;
 }
+
 .que_hacemos__body {
 	font-size: 1.5rem;
 	text-align: center;
@@ -3226,5 +3227,17 @@ img {
 
 .que_hacemos__body--bold {
 	font-weight: 800;
-	font-size: 1.9rem;
+	font-size: 2.0rem;
+}
+
+.card-title--xl {
+	font-size: 1.25rem;
+}
+
+.card-deck--pointer {
+	cursor: pointer;
+}
+
+.card-deck--pointer:hover {
+	transform: scale(1.05);
 }
