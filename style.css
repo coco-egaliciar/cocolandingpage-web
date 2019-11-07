@@ -3223,3 +3223,8 @@ img {
 	font-size: 1.5rem;
 	text-align: center;
 }
+
+.que_hacemos__body--bold {
+	font-weight: 800;
+	font-size: 1.9rem;
+}
