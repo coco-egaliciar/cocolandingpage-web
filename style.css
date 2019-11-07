@@ -3175,11 +3175,6 @@ img {
 }
 
 /*# sourceMappingURL=style.css.map */
-.video_on_header > * {
-	border-style: solid;
-	border-color: #000;
-	border-width: 0px;
-}
 
 .video_on_header {
 	position: relative;
@@ -3240,4 +3235,5 @@ img {
 
 .card-deck--pointer:hover {
 	transform: scale(1.05);
+	transition-delay: 0.2s;
 }
