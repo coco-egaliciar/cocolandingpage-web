@@ -11,6 +11,7 @@
 ----------------- */
 body > * {
   font-family: "Roboto", sans-serif;
+  font-weight: 300 !important;
 }
 
 .apland-btn,
@@ -23,6 +24,37 @@ body > * {
 .footer_social_area a:focus,
 .tooltip-inner {
   background-color: #16707f;
+}
+
+.btn__coconutt{
+	background: #16707f;
+	color:#fff;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 10px;
+	padding: 0px 1rem;
+	height: 37px;
+    border-radius: 6px;
+}
+
+.btn__coconutt:hover{
+	background:  #e03f3f;
+	color:#fff;
+	width: 50%;
+
+}
+
+
+.btnme_contact_me:hover{
+	color: #e03f3f;
+}
+.btnme_contact_me{
+	margin-top: 20px;
+	background: white;
+	color: #16707f;
+	font-size:2rem;
+	padding: 0px 1rem;
+    border-radius: 6px;
 }
 
 .apland-load,
@@ -254,6 +286,11 @@ img {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.section_margin_30 {
+	margin-top: 30px;
+	
+  }
 
 .section_heading {
   position: relative;
@@ -563,7 +600,7 @@ img {
   position: absolute;
   width: 100%;
   z-index: 9999;
-  background-color: #16707f;
+  background-color: #16707f00;
 }
 
 .main_header_area {
@@ -1585,7 +1622,7 @@ img {
   position: relative;
   z-index: 1;
   text-align: center;
-  /* background-color: #16707f; */
+  background-color: #f8f8ff;
 }
 .testimonial_area .owl-dots {
   position: relative;
@@ -3212,7 +3249,7 @@ img {
 }
 
 .video_on_header__container {
-  background: #16707f;
+  background: #e03f3f;
   min-height: 70vh;
 }
 
@@ -3278,12 +3315,13 @@ img {
 }
 
 .card-deck--pointer:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   transition-delay: 0.2s;
 }
 
 .services__block--display {
   display: inherit;
+  
 }
 
 .services__carrousel--display {
@@ -3295,7 +3333,76 @@ img {
     display: none;
   }
 
+ 
+
   .services__carrousel--display {
     display: inherit;
   }
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	/* width: 320px;
+	height: 480px; */
+}
+
+/* flip speed goes here */
+.flipper {
+	/* transition: 0.6s; */
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	padding: 30px;
+    font-size: 1.75rem;
+    font-weight: 400;
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+
+}
+
+.card-body--red:hover{
+	/* transition: 1.6s; */
+	background:#e03f3f ;
+}
+
+.particles-js-canvas-el{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    /* z-index: 50000; */
+    top: 0px;
 }

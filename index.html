@@ -17,7 +17,7 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha256-cy35RxCREfCgW7nc5h5HlCw5eEF4JKc9O+mb9BN07kY=" crossorigin="anonymous"></script> -->
 </head>
 
 <body class="apland-rajshahi-version">
@@ -29,7 +29,7 @@
     <!--registro  Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog mt-24" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Contáctanos</h5>
@@ -45,9 +45,6 @@
                             formId: "0ac60a38-6502-4aac-b3eb-a36c41a5838d"
                         });
                     </script>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No renovar mi negocio</button>
                 </div>
             </div>
         </div>
@@ -107,26 +104,27 @@
 
     <!-- ***** Header Start ***** -->
     <header class="video_on_header" id="home">
-        <div class="video_on_header__container">
-            <video class="video_on_header__video" src="PexelsVideos2916.mp4" type="video/mp4" playsinline="playsinline"
-                autoplay="autoplay" muted="muted" loop="loop"></video>
+        <div class="video_on_header__container" id="particles-js">
+            
         </div>
         <div class="video_on_header__body">
             <h1 class="video_on_header__text_white video_on_header__text_white--head">Nosotros somos tu equipo digital
             </h1>
-            <p class="video_on_header__text_white video_on_header__text_white--body">Diseñamos, construimos y mejoramos
-                productos y servicios digitales</p>
+            <p class="video_on_header__text_white video_on_header__text_white--body">
+                Diseñamos, construimos y mejoramos productos y servicios digitales
+            </p>
+            <button class="btn btnme_contact_me"  data-toggle="modal" data-target="#exampleModal">Contáctanos</button>
         </div>
     </header>
     <!-- ***** Header STOP***** -->
 
     <!-- ***** Price and Plans Area Start ***** -->
-    <div class="price_plan_area section_padding_100_70" id="servicios">
+    <div class="price_plan_area section_padding_100_70 row" id="servicios">
         <section class="row que_hacemos" id="que_hacemos">
             <p class="offset-md-2 col-md-8 que_hacemos__body que_hacemos__body--bold">
                 Somos partnerts digitales estratégicos de empresas innovadoras.
             </p>
-            <p class="col-12 que_hacemos__body">
+            <p class="que_hacemos__body  offset-1 col-10">
                 Desarrollamos junto contigo soluciones escalables, sustentables y competitivas. Te acompañamos durante
                 el trayecto como tu brazo técnico, adaptandonos a las necesidades que surjan a lo largo del tiempo.
             </p>
@@ -136,7 +134,7 @@
                 <div class="col-12 col-sm-8 col-lg-6">
                     <!-- Section Heading -->
                     <div class="section_heading text-center">
-                        <h6>Servicios</h6>
+                        <h3>Servicios</h3>
                         <div class="line"></div>
                     </div>
                 </div>
@@ -211,23 +209,40 @@
                 </div>
             </div>
             <div class="row justify-content-center  services__block--display">
+                    
                 <div class="card-deck">
                     <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
-                        <div class="card-body">
-                            <h5 class="card-title card-title--xl">Productos Digitales</h5>
-                            <p class="card-text">Desarrollamos productos y plataformas digitales que tienen el poder de
-                                transformar a las empresas.</p>
-                            <br>
-                            <ul>
-                                <li>Plataformas Web</li>
-                                <li>Mobile App </li>
-                                <li>Cloud</li>
-                                <li>RPA</li>
-                            </ul>
+                        <div class="card-body card-body--red">
+                                <div class="flip-container" onmo="this.classList.toggle('hover');">
+                                        <div class="flipper">
+                                            <div class="front">
+                                                    <h5 class="card-title card-title--xl">Productos Digitales</h5>
+                                                    <p class="card-text">Desarrollamos productos y plataformas digitales que tienen el poder de
+                                                        transformar a las empresas.</p>
+                                                    <br>
+                                                    <ul>
+                                                        <li>Plataformas Web</li>
+                                                        <li>Mobile App </li>
+                                                        <li>Cloud</li>
+                                                        <li>RPA</li>
+                                                    </ul>
+                                            </div>
+                                            <div class="back">
+                                                    <ul class="text-center">
+                                                        <li>Plataformas Web</li>
+                                                        <li>Mobile App </li>
+                                                        <li>Cloud</li>
+                                                        <li>RPA</li>
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                </div>
+                            
                         </div>
                     </div>
 
                     <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
+                        
                         <div class="card-body">
                             <h5 class="card-title card-title--xl">Innovación</h5>
                             <p class="card-text">Creamos innovaciones digitales que generan nuevas oportunidades,
@@ -435,13 +450,13 @@
     <!-- ***** Product Area End ***** -->
 
     <!-- ***** Testimonial Area Start ***** -->
-    <div class="testimonial_area bg-img section_padding_0">
+    <div class="testimonial_area bg-img section_margin_30">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-8 col-lg-6">
                     <!-- Section Heading -->
                     <div class="section_heading white text-center">
-                        <h3>Hemos colaborado con:</h3>
+                        <h3>Aliados y Clientes</h3>
                         <!-- <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page. -->
                         <!-- </p> -->
                         <div class="line"></div>
@@ -528,22 +543,17 @@
                     <div class="apland-contact-form">
                         <!-- Message Title -->
                         <div class="message_title">
-                            <div class="section_heading">
-                                <h3>Te queremos escuchar</h3>
-                                <p>¿Necesitas algo a la medida? Cuéntanos tu problema para trabajar en la mejor
-                                    solución.</p>
+                            <div class="section_heading text-center 
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            justify-items: center;
+                        ">
+                                <p>¿Tienes un proyecto?</p>
+                                    <h3>Trabajemos juntos</h3>
                             </div>
                         </div>
-                        <div class="contact_from">
-                            <script charset="utf-8" type="text/javascript"
-                                src="//js.hsforms.net/forms/shell.js"></script>
-                            <script>
-                                hbspt.forms.create({
-                                    portalId: "3052732",
-                                    formId: "0ac60a38-6502-4aac-b3eb-a36c41a5838d"
-                                });
-                            </script>
-                        </div>
+                        <button class="btn__coconutt" data-toggle="modal" data-target="#exampleModal" >Contactar</button>
                     </div>
                 </div>
             </div>
@@ -613,7 +623,13 @@
     <script src="js/include-all-plugins.min.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-
+    <script src="particles.js"></script>
+    <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'json.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+    </script>
 </body>
 
 </html>
