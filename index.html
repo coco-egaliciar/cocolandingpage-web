@@ -1,635 +1,622 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title  -->
-    <title>Coconutt - Atención a cliente con Inteligencia Artificial</title>
-
-    <!-- Favicon  -->
-    <link rel="icon" href="assets/icons/29089382-0-foto-perfil-verde-co.png">
-
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    
-</head>
-
-<body class="apland-rajshahi-version">
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="apland-load"></div>
-    </div>
-    <!--registro  Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog mt-24" role="document">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <!-- Title  -->
+      <title>Coconutt - Atención a cliente con Inteligencia Artificial</title>
+      <!-- Favicon  -->
+      <link rel="icon" href="assets/icons/29089382-0-foto-perfil-verde-co.png">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="style.css">
+      <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+   </head>
+   <body class="apland-rajshahi-version">
+      <!-- Preloader -->
+      <div id="preloader">
+         <div class="apland-load"></div>
+      </div>
+      <!--registro  Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog mt-24" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Contáctanos</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                    <script>
-                        hbspt.forms.create({
-                            portalId: "3052732",
-                            formId: "0ac60a38-6502-4aac-b3eb-a36c41a5838d"
-                        });
-                    </script>
-                </div>
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Contáctanos</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                  <script>
+                     hbspt.forms.create({
+                         portalId: "3052732",
+                         formId: "0ac60a38-6502-4aac-b3eb-a36c41a5838d"
+                     });
+                  </script>
+               </div>
             </div>
-        </div>
-    </div>
-    <!--registro  Modal -->
-
-    <!-- ***** Header Start ***** -->
-    <header class="header_area white-nav">
-        <div class="main_header_area">
+         </div>
+      </div>
+      <!--registro  Modal -->
+      <!-- ***** Header Start ***** -->
+      <header class="header_area white-nav">
+         <div class="main_header_area">
             <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <nav class="classy-navbar justify-content-between" id="aplandNav">
-
-                        <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img
-                                src="assets/icons/1536193004-34114191-226x40-Recurso-26.png" alt=""></a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+               <div class="container">
+                  <nav class="classy-navbar justify-content-between" id="aplandNav">
+                     <!-- Logo -->
+                     <a class="nav-brand" href="index.html"><img
+                        src="assets/icons/1536193004-34114191-226x40-Recurso-26.png" alt=""></a>
+                     <!-- Navbar Toggler -->
+                     <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                     </div>
+                     <!-- Menu -->
+                     <div class="classy-menu">
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                           <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                         </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu">
-                            <!-- close btn -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul id="corenav">
-                                    <li class="active"><a href="#home">Home</a></li>
-                                    <li><a href="#servicios">Servicios</a></li>
-                                    <li><a href="#team">Equipo</a></li>
-
-                                    <!--li><a href="#">Blog</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog-card.html">Blog Card</a></li>
-                                            <li><a href="blog-card-sidebar.html">Blog Card Sidebar</a></li>
-                                            <li><a href="https://medium.com/coconutt-chatbots-en-espa%C3%B1ol/7-beneficios-de-tener-un-chatbot-en-tu-negoc">7 Beneficios de tener un chatbot en tu negocio</a></li>
-                                            <li><a href="https://medium.com/coconutt-chatbots-en-español/5-razones-por-las-cuales-las-empresas-que-no-tengan-un-chatbot-quebrarán-en-el-2025-4c2829056135">Empresas quebrarán 2025</a></li>
-                                            <li><a href="https://medium.com/coconutt-chatbots-en-español/en-el-futuro-todos-tendremos-nuestra-propia-inteligencia-artificial-57bea6944407">El futuro de la IA</a></li>
-                                        </ul>
-                                    </li-->
-                                    <li><a href="#contact">Contactar</a></li>
-                                </ul>
-                            </div>
-                            <!-- Nav End -->
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                           <ul id="corenav">
+                              <li class="active"><a href="#home">Home</a></li>
+                              <li><a href="#servicios">Servicios</a></li>
+                              <li><a href="#team">Equipo</a></li>
+                              <!--li><a href="#">Blog</a>
+                                 <ul class="dropdown">
+                                     <li><a href="blog-card.html">Blog Card</a></li>
+                                     <li><a href="blog-card-sidebar.html">Blog Card Sidebar</a></li>
+                                     <li><a href="https://medium.com/coconutt-chatbots-en-espa%C3%B1ol/7-beneficios-de-tener-un-chatbot-en-tu-negoc">7 Beneficios de tener un chatbot en tu negocio</a></li>
+                                     <li><a href="https://medium.com/coconutt-chatbots-en-español/5-razones-por-las-cuales-las-empresas-que-no-tengan-un-chatbot-quebrarán-en-el-2025-4c2829056135">Empresas quebrarán 2025</a></li>
+                                     <li><a href="https://medium.com/coconutt-chatbots-en-español/en-el-futuro-todos-tendremos-nuestra-propia-inteligencia-artificial-57bea6944407">El futuro de la IA</a></li>
+                                 </ul>
+                                 </li-->
+                              <li><a href="#contact">Contactar</a></li>
+                           </ul>
                         </div>
-                    </nav>
-                </div>
+                        <!-- Nav End -->
+                     </div>
+                  </nav>
+               </div>
             </div>
-        </div>
-    </header>
-    <!-- ***** Header End ***** -->
-
-    <!-- ***** Header Start ***** -->
-    <header class="video_on_header" id="home">
-        <div class="video_on_header__container" id="particles-js">
-            
-        </div>
-        <div class="video_on_header__body">
-            <h1 class="video_on_header__text_white video_on_header__text_white--head">Nosotros somos tu equipo digital
-            </h1>
-            <p class="video_on_header__text_white video_on_header__text_white--body">
-                Diseñamos, construimos y mejoramos productos y servicios digitales
+         </div>
+      </header>
+      <!-- ***** Header End ***** -->
+      <!-- ***** Header Start ***** -->
+      <header class="video_on_header" id="home">
+         <div class="video_on_header__container" id="particles-js">
+         </div>
+         <div class="video_on_header__body">
+            <div class="video_on_header__text_white video_on_header__text_white--head">Nosotros somos tu equipo digital
+            </div>
+            <p class="video_on_header__text_white video_on_header__text_white--body mt-10 body__interline">
+               Diseñamos, construimos y mejoramos productos y servicios digitales
             </p>
             <button class="btn btnme_contact_me"  data-toggle="modal" data-target="#exampleModal">Contáctanos</button>
-        </div>
-    </header>
-    <!-- ***** Header STOP***** -->
-
-    <!-- ***** Price and Plans Area Start ***** -->
-    <div class="price_plan_area section_padding_100_70 row" id="servicios">
-        <section class="row que_hacemos" id="que_hacemos">
-            <p class="offset-md-2 col-md-8 que_hacemos__body que_hacemos__body--bold">
-                Somos partnerts digitales estratégicos de empresas innovadoras.
+         </div>
+      </header>
+      <!-- ***** Header STOP***** -->
+      <!-- ***** Price and Plans Area Start ***** -->
+      <div class="price_plan_area section_padding_100_70 row" id="servicios">
+         <section class="row que_hacemos" id="que_hacemos">
+            <p class="offset-md-2 col-md-8 que_hacemos__title text-ligth title__interline">
+               Somos partnerts digitales estratégicos de empresas innovadoras.
             </p>
-            <p class="que_hacemos__body  offset-1 col-10">
-                Desarrollamos junto contigo soluciones escalables, sustentables y competitivas. Te acompañamos durante
-                el trayecto como tu brazo técnico, adaptandonos a las necesidades que surjan a lo largo del tiempo.
+            <p class="que_hacemos__body text-ligth offset-1 col-10 mt-5 body__interline">
+               Desarrollamos junto contigo soluciones escalables, sustentables y competitivas. Te acompañamos durante
+               el trayecto como tu brazo técnico, adaptandonos a las necesidades que surjan a lo largo del tiempo.
             </p>
-        </section>
-        <div class="container">
+         </section>
+         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-8 col-lg-6">
-                    <!-- Section Heading -->
-                    <div class="section_heading text-center">
-                        <h3>Servicios</h3>
-                        <div class="line"></div>
-                    </div>
-                </div>
+               <div class="col-12 col-sm-8 col-lg-6">
+                  <!-- Section Heading -->
+                  <div class="section_heading text-center">
+                     <h3>Servicios</h3>
+                     <div class="line"></div>
+                  </div>
+               </div>
             </div>
-
             <div class="row services__carrousel--display">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
-                                <div class="card-body">
-                                    <h5 class="card-title card-title--xl">Productos Digitales</h5>
-                                    <p class="card-text">Desarrollamos productos y plataformas digitales que tienen el
-                                        poder de
-                                        transformar a las empresas.</p>
-                                    <br>
-                                    <ul>
-                                        <li>Plataformas Web</li>
-                                        <li>Mobile App </li>
-                                        <li>Cloud</li>
-                                        <li>RPA</li>
-                                    </ul>
-                                </div>
-                            </div>
+               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
+                           <div class="card-body">
+                              <h5 class="card-title card-title--xl">Productos Digitales</h5>
+                              <p class="card-text">Desarrollamos productos y plataformas digitales que tienen el
+                                 poder de
+                                 transformar a las empresas.
+                              </p>
+                              <br>
+                              <ul>
+                                 <li>Plataformas Web</li>
+                                 <li>Mobile App </li>
+                                 <li>Cloud</li>
+                                 <li>RPA</li>
+                              </ul>
+                           </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
-                                <div class="card-body">
-                                    <h5 class="card-title card-title--xl">Innovación</h5>
-                                    <p class="card-text">Creamos innovaciones digitales que generan nuevas
-                                        oportunidades,
-                                        aceleran el crecimiento y reducen los costos.</p>
-                                    <br>
-                                    <ul>
-                                        <li>Chatbots</li>
-                                        <li>Artificial Vision </li>
-                                        <li>Voice / NLP</li>
-                                    </ul>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
+                           <div class="card-body">
+                              <h5 class="card-title card-title--xl">Innovación</h5>
+                              <p class="card-text">Creamos innovaciones digitales que generan nuevas
+                                 oportunidades,
+                                 aceleran el crecimiento y reducen los costos.
+                              </p>
+                              <br>
+                              <ul>
+                                 <li>Chatbots</li>
+                                 <li>Artificial Vision </li>
+                                 <li>Voice / NLP</li>
+                              </ul>
+                           </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
-                                <div class="card-body">
-                                    <h5 class="card-title card-title--xl">Analisis de Datos</h5>
-                                    <p class="card-text">Utilizamos el poder de los datos: creamos inteligencia
-                                        procesable y
-                                        experiencias personalizadas.</p>
-                                    <br>
-                                    <ul>
-                                        <li>Visualization - Dashboards</li>
-                                        <li>Reporting</li>
-                                        <li>Machine Learning</li>
-                                    </ul>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
+                           <div class="card-body">
+                              <h5 class="card-title card-title--xl">Analisis de Datos</h5>
+                              <p class="card-text">Utilizamos el poder de los datos: creamos inteligencia
+                                 procesable y
+                                 experiencias personalizadas.
+                              </p>
+                              <br>
+                              <ul>
+                                 <li>Visualization - Dashboards</li>
+                                 <li>Reporting</li>
+                                 <li>Machine Learning</li>
+                              </ul>
+                           </div>
                         </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+               </div>
             </div>
             <div class="row justify-content-center  services__block--display">
-                    
-                <div class="card-deck">
-                    <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
+               <div class="card-deck">
+                  <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
+                     <div class="card-body card-body--red">
+                        <div class="flip-container" s="this.classList.toggle('hover');">
+                           <div class="flipper">
+                              <div class="front">
+                                 <h5 class="card-title card-title--xl">Productos Digitales</h5>
+                                 <p class="card-text">Desarrollamos productos y plataformas digitales que tienen el poder de
+                                    transformar a las empresas.
+                                 </p>
+                                 <br>
+                                 <ul>
+                                    <li>Plataformas Web</li>
+                                    <li>Mobile App </li>
+                                    <li>Cloud</li>
+                                    <li>RPA</li>
+                                 </ul>
+                              </div>
+                              <div class="back">
+                                 <ul class="text-center">
+                                    <li>Plataformas Web</li>
+                                    <li>Mobile App </li>
+                                    <li>Cloud</li>
+                                    <li>RPA</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
+                     <div class="card-body card-body--red">
+                        <div class="flip-container" s="this.classList.toggle('hover');">
+                           <div class="flipper">
+                              <div class="front">
+                                 <h5 class="card-title card-title--xl">Innovación</h5>
+                                 <p class="card-text">Creamos innovaciones digitales que generan nuevas oportunidades,
+                                    aceleran el crecimiento y reducen los costos.
+                                 </p>
+                                 <br>
+                                 <ul>
+                                    <li>Chatbots</li>
+                                    <li>Artificial Vision </li>
+                                    <li>Voice / NLP</li>
+                                 </ul>
+                              </div>
+                              <div class="back">
+                                 <ul>
+                                    <li>Chatbots</li>
+                                    <li>Artificial Vision </li>
+                                    <li>Voice / NLP</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                   <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
                         <div class="card-body card-body--red">
-                                <div class="flip-container" onmo="this.classList.toggle('hover');">
-                                        <div class="flipper">
-                                            <div class="front">
-                                                    <h5 class="card-title card-title--xl">Productos Digitales</h5>
-                                                    <p class="card-text">Desarrollamos productos y plataformas digitales que tienen el poder de
-                                                        transformar a las empresas.</p>
-                                                    <br>
-                                                    <ul>
-                                                        <li>Plataformas Web</li>
-                                                        <li>Mobile App </li>
-                                                        <li>Cloud</li>
-                                                        <li>RPA</li>
-                                                    </ul>
-                                            </div>
-                                            <div class="back">
-                                                    <ul class="text-center">
-                                                        <li>Plataformas Web</li>
-                                                        <li>Mobile App </li>
-                                                        <li>Cloud</li>
-                                                        <li>RPA</li>
-                                                    </ul>
-                                            </div>
-                                        </div>
+                            <div class="flip-container" s="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <h5 class="card-title card-title--xl">Analisis de Datos</h5>
+                                        <p class="card-text">Utilizamos el poder de los datos: creamos inteligencia procesable y
+                                            experiencias personalizadas.
+                                            </p>
+                                        <br>
+                                        <ul>
+                                            <li>Visualization </li>
+                                            <li>Dashboards</li>
+                                            <li>Reporting</li>
+                                            <li>Machine Learning</li>
+                                        </ul>
+                                    </div>
+                                    <div class="back">
+                                        <ul>
+                                            <li>Visualization </li>
+                                            <li>Dashboards</li>
+                                            <li>Reporting</li>
+                                            <li>Machine Learning</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
-                        
-                        <div class="card-body">
-                            <h5 class="card-title card-title--xl">Innovación</h5>
-                            <p class="card-text">Creamos innovaciones digitales que generan nuevas oportunidades,
-                                aceleran el crecimiento y reducen los costos.</p>
-                            <br>
-                            <ul>
-                                <li>Chatbots</li>
-                                <li>Artificial Vision </li>
-                                <li>Voice / NLP</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="card card-deck--pointer" data-toggle="modal" data-target="#exampleModal">
-                        <div class="card-body">
-                            <h5 class="card-title card-title--xl">Analisis de Datos</h5>
-                            <p class="card-text">Utilizamos el poder de los datos: creamos inteligencia procesable y
-                                experiencias personalizadas.</p>
-                            <br>
-                            <ul>
-                                <li>Visualization - Dashboards</li>
-                                <li>Reporting</li>
-                                <li>Machine Learning</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- ***** Price and Plans Area End ***** -->
-
-    <!-- ***** Work Process Area Start ***** -->
-    <section class="work_process_area section_padding_100_50">
-        <div class="container">
+         </div>
+      </div>
+      <!-- ***** Price and Plans Area End ***** -->
+      <!-- ***** Work Process Area Start ***** -->
+      <section class="work_process_area section_padding_100_50">
+         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-8 col-lg-6">
-                    <!-- Section Heading -->
-                    <div class="section_heading text-center">
-                        <h3>¿Cómo trabajamos?</h3>
-                        <p>A lo largo de los años nos hemos dado cuenta que el unico experto de cada negocio eres tú,
-                            por medio de nuestra metodología de trabajo te orientamos a ordernar tus ideas y
-                            aterrizarlas en un diseño de producto.</p>
-                        <div class="line"></div>
-                    </div>
-                </div>
+               <div class="col-12 col-sm-8 col-lg-6">
+                  <!-- Section Heading -->
+                  <div class="section_heading text-center">
+                     <h3>¿Cómo trabajamos?</h3>
+                     <p>A lo largo de los años nos hemos dado cuenta que el unico experto de cada negocio eres tú,
+                        por medio de nuestra metodología de trabajo te orientamos a ordernar tus ideas y
+                        aterrizarlas en un diseño de producto.
+                     </p>
+                     <div class="line"></div>
+                  </div>
+               </div>
             </div>
-
             <div class="row justify-content-between">
-                <!-- Single Work Step -->
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step">
-                        <div class="step-icon">
-                            <i class="far fa-lightbulb"></i>
-
-                        </div>
-                        <h5>Definimos tu solución</h5>
-                    </div>
-                </div>
-
-                <!-- Single Work Step -->
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step">
-                        <div class="step-icon">
-                            <i class="icofont-infinite"></i>
-                        </div>
-                        <h5>Seleccionamos tecnologías</h5>
-                    </div>
-                </div>
-
-                <!-- Single Work Step -->
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step">
-                        <div class="step-icon">
-                            <i class="icofont-tick-mark"></i>
-                        </div>
-                        <h5>Desa<i class="fas fa-lightbulb"></i>rrollo</h5>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="single_work_step">
-                        <div class="step-icon">
-                            <i class="icofont-tick-mark"></i>
-                        </div>
-                        <h5>Entrega</h5>
-                    </div>
-                </div>
-
+               <!-- Single Work Step -->
+               <div class="col-12 col-sm-4 col-md-3">
+                  <div class="single_work_step">
+                     <div class="step-icon">
+                        <i class="far fa-lightbulb"></i>
+                     </div>
+                     <h5>Definimos tu solución</h5>
+                  </div>
+               </div>
+               <!-- Single Work Step -->
+               <div class="col-12 col-sm-4 col-md-3">
+                  <div class="single_work_step">
+                     <div class="step-icon">
+                        <i class="icofont-infinite"></i>
+                     </div>
+                     <h5>Seleccionamos tecnologías</h5>
+                  </div>
+               </div>
+               <!-- Single Work Step -->
+               <div class="col-12 col-sm-4 col-md-3">
+                  <div class="single_work_step">
+                     <div class="step-icon">
+                        <i class="icofont-tick-mark"></i>
+                     </div>
+                     <h5>Desa<i class="fas fa-lightbulb"></i>rrollo</h5>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-4 col-md-3">
+                  <div class="single_work_step">
+                     <div class="step-icon">
+                        <i class="icofont-tick-mark"></i>
+                     </div>
+                     <h5>Entrega</h5>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- ***** Work Process Area End ***** -->
-
-    <!-- ***** Product Area Start ***** -->
-    <section class="about_area section_padding_50" id="features">
-        <div class="container">
+         </div>
+      </section>
+      <!-- ***** Work Process Area End ***** -->
+      <!-- ***** Product Area Start ***** -->
+      <section class="about_area section_padding_50" id="features">
+         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-8 col-lg-6">
-                    <!-- Section Heading -->
-                    <div class=" text-center">
-                        <!-- <h6>Beneficios de trabajar con nosotros</h6> -->
-                        <h3>Software como potenciador de tu marca</h3>
-                        <div class="line"></div>
-                    </div>
-                </div>
+               <div class="col-12 col-sm-8 col-lg-6">
+                  <!-- Section Heading -->
+                  <div class=" text-center">
+                     <!-- <h6>Beneficios de trabajar con nosotros</h6> -->
+                     <h3>Software como potenciador de tu marca</h3>
+                     <div class="line"></div>
+                  </div>
+               </div>
             </div>
-
             <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <div class="about_product_discription">
-                        <div class="row">
-                            <!-- Single About Area -->
-                            <div class="col-12">
-                                <div class="single_about_part wow fadeInUp" data-wow-delay="0.2s">
-                                    <div class="feature_icon">
-                                        <i class="icofont-soccer"></i>
-                                    </div>
-                                    <h6>Integramos con tus plataformas favoritas</h6>
-                                    <p>Integramos nuestras soluciones con tus herramientas favoritas. Como tu CRM,
-                                        Helpdesk o hasta tu servicio de paquetería.</p>
-                                </div>
-                            </div>
-
-                            <!-- Single About Area -->
-                            <div class="col-12">
-                                <div class="single_about_part wow fadeInUp" data-wow-delay="0.4s">
-                                    <div class="feature_icon">
-                                        <i class="icofont-leaf"></i>
-                                    </div>
-                                    <h6>Nuevos canales de comunicación</h6>
-                                    <p>Implementamos tu chatbot en Facebook Messenger, Slack, Whatsapp, tu página web y
-                                        más.</p>
-                                </div>
-                            </div>
-
-                            <!-- Single About Area -->
-                            <div class="col-12">
-                                <div class="single_about_part wow fadeInUp" data-wow-delay="0.6s">
-                                    <div class="feature_icon">
-                                        <i class="icofont-bullseye"></i>
-                                    </div>
-                                    <h6>Automatizamos la atención a cliente</h6>
-                                    <p>Mientras nosotros resolvemos el 80% de problemas frecuentes, tu equipo de trabajo
-                                        genera acciones que ofrecen valor a tu marca.</p>
-                                </div>
-                            </div>
+               <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                  <div class="about_product_discription">
+                     <div class="row">
+                        <!-- Single About Area -->
+                        <div class="col-12">
+                           <div class="single_about_part wow fadeInUp" data-wow-delay="0.2s">
+                              <div class="feature_icon">
+                                 <i class="icofont-soccer"></i>
+                              </div>
+                              <h6>Integramos con tus plataformas favoritas</h6>
+                              <p class="text-ligth">Integramos nuestras soluciones con tus herramientas favoritas. Como tu CRM,
+                                 Helpdesk o hasta tu servicio de paquetería.
+                              </p>
+                           </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- About Product Thumb Area -->
-                <div class="col-12 col-md-8 col-lg-4">
-                    <div class="about_product_thumb text-center my-5 my-lg-0">
-                        <div class="phoneCoco">
-                            <img src="assets/imgs/1550519229-29084837-250x440x250x445x0x1-82991.jpg" alt="">
+                        <!-- Single About Area -->
+                        <div class="col-12">
+                           <div class="single_about_part wow fadeInUp" data-wow-delay="0.4s">
+                              <div class="feature_icon">
+                                 <i class="icofont-leaf"></i>
+                              </div>
+                              <h6>Nuevos canales de comunicación</h6>
+                              <p class="text-ligth">Implementamos tu chatbot en Facebook Messenger, Slack, Whatsapp, tu página web y
+                                 más.
+                              </p>
+                           </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <div class="about_product_discription">
-                        <div class="row">
-                            <!-- Single About Area -->
-                            <div class="col-12">
-                                <div class="single_about_part wow fadeInUp" data-wow-delay="0.2s">
-                                    <div class="feature_icon">
-                                        <i class="icofont-computer"></i>
-                                    </div>
-                                    <h6>100% Responsive</h6>
-                                    <p>Diseño web responsivo. Visualiza tu sitio web desde una tablet, celular o una
-                                        computadora de escritorio.</p>
-                                </div>
-                            </div>
-
-                            <!-- Single About Area -->
-                            <div class="col-12">
-                                <div class="single_about_part wow fadeInUp" data-wow-delay="0.4s">
-                                    <div class="feature_icon">
-                                        <i class="icofont-code"></i>
-                                    </div>
-                                    <h6>Clean Code</h6>
-                                    <p>Aplicamos un conjunto de buenas prácticas que dan por resultado un producto de
-                                        alta calidad.</p>
-                                </div>
-                            </div>
-
-                            <!-- Single About Area -->
-                            <div class="col-12">
-                                <div class="single_about_part wow fadeInUp" data-wow-delay="0.6s">
-                                    <div class="feature_icon">
-                                        <i class="icofont-eye-alt"></i>
-                                    </div>
-                                    <h6>Creamos experiencias</h6>
-                                    <p>Resolvemos los requerimientos de tus usuarios por medio de grandiosas
-                                        conversaciones.</p>
-                                </div>
-                            </div>
+                        <!-- Single About Area -->
+                        <div class="col-12">
+                           <div class="single_about_part wow fadeInUp" data-wow-delay="0.6s">
+                              <div class="feature_icon">
+                                 <i class="icofont-bullseye"></i>
+                              </div>
+                              <h6>Automatizamos la atención a cliente</h6>
+                              <p>Mientras nosotros resolvemos el 80% de problemas frecuentes, tu equipo de trabajo
+                                 genera acciones que ofrecen valor a tu marca.
+                              </p>
+                           </div>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- About Product Thumb Area -->
+               <div class="col-12 col-md-8 col-lg-4">
+                  <div class="about_product_thumb text-center my-5 my-lg-0">
+                     <div class="phoneCoco">
+                        <img src="assets/imgs/1550519229-29084837-250x440x250x445x0x1-82991.jpg" alt="">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                  <div class="about_product_discription">
+                     <div class="row">
+                        <!-- Single About Area -->
+                        <div class="col-12">
+                           <div class="single_about_part wow fadeInUp" data-wow-delay="0.2s">
+                              <div class="feature_icon">
+                                 <i class="icofont-computer"></i>
+                              </div>
+                              <h6>100% Responsive</h6>
+                              <p class="text-ligth">Diseño web responsivo. Visualiza tu sitio web desde una tablet, celular o una
+                                 computadora de escritorio.
+                              </p>
+                           </div>
+                        </div>
+                        <!-- Single About Area -->
+                        <div class="col-12">
+                           <div class="single_about_part wow fadeInUp" data-wow-delay="0.4s">
+                              <div class="feature_icon">
+                                 <i class="icofont-code"></i>
+                              </div>
+                              <h6>Clean Code</h6>
+                              <p>Aplicamos un conjunto de buenas prácticas que dan por resultado un producto de
+                                 alta calidad.
+                              </p>
+                           </div>
+                        </div>
+                        <!-- Single About Area -->
+                        <div class="col-12">
+                           <div class="single_about_part wow fadeInUp" data-wow-delay="0.6s">
+                              <div class="feature_icon">
+                                 <i class="icofont-eye-alt"></i>
+                              </div>
+                              <h6>Creamos experiencias</h6>
+                              <p class="text-ligth">Resolvemos los requerimientos de tus usuarios por medio de grandiosas
+                                 conversaciones.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- ***** Product Area End ***** -->
-
-    <!-- ***** Testimonial Area Start ***** -->
-    <div class="testimonial_area bg-img section_margin_30">
-        <div class="container">
+         </div>
+      </section>
+      <!-- ***** Product Area End ***** -->
+      <!-- ***** Testimonial Area Start ***** -->
+      <div class="testimonial_area bg-img section_margin_30">
+         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-8 col-lg-6">
-                    <!-- Section Heading -->
-                    <div class="section_heading white text-center">
-                        <h3>Aliados y Clientes</h3>
-                        <!-- <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page. -->
-                        <!-- </p> -->
-                        <div class="line"></div>
-                    </div>
-                </div>
+               <div class="col-12 col-sm-8 col-lg-6">
+                  <!-- Section Heading -->
+                  <div class="section_heading white text-center">
+                     <h3>Aliados y Clientes</h3>
+                     <!-- <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page. -->
+                     <!-- </p> -->
+                     <div class="line"></div>
+                  </div>
+               </div>
             </div>
-
             <div class="row justify-content-center">
-                <div class="col-2">
-                    <img src="img/brands/1unnamed.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="img/brands/2unnamed.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="img/brands/3unnamed.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="img/brands/4unnamed.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="img/brands/5unnamed.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="img/brands/6unnamed.jpg" alt="">
-                </div>
+               <div class="col-2">
+                  <img src="img/brands/1unnamed.png" alt="">
+               </div>
+               <div class="col-2">
+                  <img src="img/brands/2unnamed.png" alt="">
+               </div>
+               <div class="col-2">
+                  <img src="img/brands/3unnamed.png" alt="">
+               </div>
+               <div class="col-2">
+                  <img src="img/brands/4unnamed.png" alt="">
+               </div>
+               <div class="col-2">
+                  <img src="img/brands/5unnamed.png" alt="">
+               </div>
+               <div class="col-2">
+                  <img src="img/brands/6unnamed.jpg" alt="">
+               </div>
             </div>
             <br>
             <div class="row justify-content-center">
-                <div class="col-2">
-                    <img src="img/brands/7unnamed.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="img/brands/8unnamed.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="img/brands/10unnamed.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="img/brands/11unnamed.jpg" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="img/brands/oreico.webp" alt="">
-                </div>
+               <div class="col-2">
+                  <img src="img/brands/7unnamed.png" alt="">
+               </div>
+               <div class="col-2">
+                  <img src="img/brands/8unnamed.png" alt="">
+               </div>
+               <div class="col-2">
+                  <img src="img/brands/10unnamed.png" alt="">
+               </div>
+               <div class="col-2">
+                  <img src="img/brands/11unnamed.jpg" alt="">
+               </div>
+               <div class="col-2">
+                  <img src="img/brands/oreico.webp" alt="">
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- ***** Testimonial Area End ***** -->
-
-    <!-- ***** Our Advisor Area Start ***** -->
-    <section class="our_advisor_area section_padding_100_70" id="team">
-        <div class="container">
+         </div>
+      </div>
+      <!-- ***** Testimonial Area End ***** -->
+      <!-- ***** Our Advisor Area Start ***** -->
+      <section class="our_advisor_area section_padding_100_70" id="team">
+         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-8 col-lg-6">
-                    <!-- Section Heading -->
-                    <div class="section_heading text-center">
-                        <h3>Nuestro equipo</h3>
-                        <p>Somos una empresa de jóvenes apasionados por la tecnología, los chatbots, la lectura, los
-                            deportes, la ciencia ficción, el café, los tacos.... básicamente somos personas como tú.</p>
-                        <div class="line"></div>
-                    </div>
-                </div>
+               <div class="col-12 col-sm-8 col-lg-6">
+                  <!-- Section Heading -->
+                  <div class="section_heading text-center">
+                     <h3>Nuestro equipo</h3>
+                     <p class="text-ligth body__interline">Somos una empresa de jóvenes apasionados por la tecnología, los chatbots, la lectura, los
+                        deportes, la ciencia ficción, el café, los tacos.... básicamente somos personas como tú.
+                     </p>
+                     <div class="line"></div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- ***** Our advisor Area End ***** -->
-
-
-    <!-- ***** Map Area Start ***** -->
-    <div class="map_contact_address_area" id="contact">
-        <div class="map_area" id="googleMap">
+         </div>
+      </section>
+      <!-- ***** Our advisor Area End ***** -->
+      <!-- ***** Map Area Start ***** -->
+      <div class="map_contact_address_area" id="contact">
+         <div class="map_area" id="googleMap">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.6746312289335!2d-99.17330745991795!3d19.43352208916014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8b48331803f%3A0x231a1d9275a1a199!2sGutenberg%2051%2C%20Ver%C3%B3nica%20Anz%C3%BAres%2C%20Miguel%20Hidalgo%2C%2011300%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1573085174332!5m2!1ses!2sus"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <!-- ***** Map Area End ***** -->
-
-    <!-- ***** Message Now Area Start ***** -->
-    <section class="message_now_area bg-gray wow fadeInUp" data-wow-delay="0.5s">
-        <div class="container">
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.6746312289335!2d-99.17330745991795!3d19.43352208916014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8b48331803f%3A0x231a1d9275a1a199!2sGutenberg%2051%2C%20Ver%C3%B3nica%20Anz%C3%BAres%2C%20Miguel%20Hidalgo%2C%2011300%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1573085174332!5m2!1ses!2sus"
+               width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>
+      </div>
+      <!-- ***** Map Area End ***** -->
+      <!-- ***** Message Now Area Start ***** -->
+      <section class="message_now_area bg-gray wow fadeInUp" data-wow-delay="0.5s">
+         <div class="container">
             <div class="row">
-                <div class="offset-md-3 col-md-6 col-12">
-                    <div class="apland-contact-form">
-                        <!-- Message Title -->
-                        <div class="message_title">
-                            <div class="section_heading text-center 
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            justify-items: center;
-                        ">
-                                <p>¿Tienes un proyecto?</p>
-                                    <h3>Trabajemos juntos</h3>
-                            </div>
+               <div class="offset-md-3 col-md-6 col-12">
+                  <div class="apland-contact-form">
+                     <!-- Message Title -->
+                     <div class="message_title">
+                        <div class="section_heading text-center 
+                           display: flex;
+                           flex-direction: column;
+                           justify-content: center;
+                           justify-items: center;
+                           ">
+                           <p>¿Tienes un proyecto?</p>
+                           <h3>Trabajemos juntos</h3>
                         </div>
-                        <button class="btn__coconutt" data-toggle="modal" data-target="#exampleModal" >Contactar</button>
-                    </div>
-                </div>
+                     </div>
+                     <button class="btn__coconutt" data-toggle="modal" data-target="#exampleModal" >Contactar</button>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- ***** Message Now Area End ***** -->
-
-    <!-- ***** Footer Area Start ***** -->
-    <footer class="footer_area">
-        <div class="footer_bottom_area">
+         </div>
+      </section>
+      <!-- ***** Message Now Area End ***** -->
+      <!-- ***** Footer Area Start ***** -->
+      <footer class="footer_area">
+         <div class="footer_bottom_area">
             <div class="container">
-                <div class="row">
-                    <!-- Footer Social Area -->
-                    <div class="col-12">
-                        <div class="footer_social_area">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
-                                    class="fa fa-facebook"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i
-                                    class="fa fa-pinterest"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Skype"><i
-                                    class="fa fa-skype"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i
-                                    class="fa fa-twitter"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i
-                                    class="fa fa-linkedin"></i></a>
-                        </div>
-                        <!-- Footer Menu Area -->
-                        <div class="footer_menu">
-                            <ul>
-                                <li><a href="#">Acerca de nosotros</a></li>
-                                <li><a href="#">Política de privacidad</a></li>
-                                <li><a href="#">Términos y condiciones</a></li>
-                                <li><a href="#">Centro de ayuda</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+               <div class="row">
+                  <!-- Footer Social Area -->
+                  <div class="col-12">
+                     <div class="footer_social_area">
+                        <a href="https://es.linkedin.com/company/coconutt" data-toggle="tooltip" data-placement="top" title="Linkedin" target="_blank"><i
+                           class="fa fa-linkedin"></i></a>
+                     </div>
+                     <!-- Footer Menu Area -->
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="#">Acerca de nosotros</a></li>
+                           <li><a href="#">Política de privacidad</a></li>
+                           <li><a href="#">Términos y condiciones</a></li>
+                           <li><a href="#">Centro de ayuda</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-
-        <div class="footer_copywrite_area">
+         </div>
+         <div class="footer_copywrite_area">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Footer Copwrite Area -->
-                        <div class="footer_bottom text-center">
-                            <p>Hecho con <i class="fa fa-heart"></i> por Coconutt</p>
-                        </div>
-                    </div>
-                </div>
+               <div class="row">
+                  <div class="col-12">
+                     <!-- Footer Copwrite Area -->
+                     <div class="footer_bottom text-center">
+                        <p>Hecho con <i class="fa fa-heart"></i> por Coconutt</p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </footer>
-    <!-- ***** Footer Area End ***** -->
-
-    <!-- ***** All jQuery Plugins ***** -->
-
-    <!-- jQuery(necessary for all JavaScript plugins) -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <!-- Nav js -->
-    <script src="js/classy-nav.min.js"></script>
-    <!-- Plugins js -->
-    <script src="js/include-all-plugins.min.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
-    <script src="js/particles.js"></script>
-    <script>
-        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-        particlesJS.load('particles-js', 'js/json.json', function() {
-        console.log('callback - particles.js config loaded');
-        });
-    </script>
-</body>
-
+         </div>
+      </footer>
+      <!-- ***** Footer Area End ***** -->
+      <!-- ***** All jQuery Plugins ***** -->
+      <!-- jQuery(necessary for all JavaScript plugins) -->
+      <script src="js/jquery/jquery-2.2.4.min.js"></script>
+      <!-- Popper js -->
+      <script src="js/bootstrap/popper.min.js"></script>
+      <!-- Bootstrap js -->
+      <script src="js/bootstrap/bootstrap.min.js"></script>
+      <!-- Nav js -->
+      <script src="js/classy-nav.min.js"></script>
+      <!-- Plugins js -->
+      <script src="js/include-all-plugins.min.js"></script>
+      <!-- Active js -->
+      <script src="js/active.js"></script>
+      <script src="js/particles.js"></script>
+      <script>
+         /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+         particlesJS.load('particles-js', 'js/json.json', function() {
+         console.log('callback - particles.js config loaded');
+         });
+      </script>
+   </body>
 </html>
